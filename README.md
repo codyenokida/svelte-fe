@@ -17,3 +17,8 @@ currently running on https://fastapi-be-un35.onrender.com
 ## hosted on netlify
 
 https://piq-energy.netlify.app/
+
+### pitfalls :(
+
+- spent too many hours trying to figure out docker compose in conjunction with fastapi and sveltekit. not too much documentation. I should've started off project with docker compose. good lesson for next time!
+- sveltekit ecosystem is not as mature as react. lots of workarounds.
