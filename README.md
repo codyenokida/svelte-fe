@@ -1,38 +1,19 @@
-# sv
+# SvelteKit takehome
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## run locally
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+You may need to go to `svelte.config.js` and change the `adapter` to `adapter-node` if you want to run it locally.
 
-To create a production version of your app:
+if running both the FastAPI server locally, set the `VITE_FAST_API_BASE_URL` to `http://localhost:8000` in `.env`.
 
-```bash
-npm run build
-```
+else, set the `VITE_FAST_API_BASE_URL` to the production URL in `.env`. 
+currently running on https://fastapi-be-un35.onrender.com
 
-You can preview the production build with `npm run preview`.
+## hosted on netlify
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+https://piq-energy.netlify.app/
